@@ -13,6 +13,9 @@ import tripPricer.service.TripPricerService;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * TRIP PRICER CONTROLLER USED AS A MICROSERVICE FOR THE MAIN APP TOUR-GUIDE
+ */
 @RestController
 public class TripPricerController {
 
@@ -21,6 +24,17 @@ public class TripPricerController {
     @Autowired
     TripPricerService tripPricerService;
 
+    /**
+     *
+     * @param apiKey a string of the key needed, not used at the moment in final method getProviderName
+     * @param attractionId the UUID of the attractionId in a form of a string
+     * @param adults int of the number of adults
+     * @param children int of the number of children
+     * @param nightsStay int of the number of nights stay
+     * @param rewardsPoints int of the reward points
+     * @return a list of providers based on user preferences
+     * @throws UUIDException
+     */
     @GetMapping("/getPrice")
     public List<Provider> getPriceServer(@RequestParam String apiKey, String attractionId, int adults, int children,
                                          int nightsStay, int rewardsPoints) throws UUIDException {
