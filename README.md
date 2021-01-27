@@ -75,6 +75,6 @@ Run docker-compose up and Compose starts and runs your entire app.
 ## Endpoint
 
 > **GET** - Get a list of providers with trip deals
-http://localhost:8081/getPrice" <br>
+http://localhost:8083/getPrice" <br>
 **OBLIGATORY parameters**: apiKey, attractionId, adults, children, nightsStay, rewardsPoints 
 
