@@ -1,9 +1,6 @@
 # P8-TOURGUIDE-TRIPPRICER
 MICROSERVICE OF P8-TOURGUIDE
 
-# P8-TOURGUIDE-GPSUTIL
-MICROSERVICE OF P8-TOURGUIDE
-
 ## Purpose
 TourGuide is a Spring Boot application that has been a centerpiece in the TripMasters app portfolio. 
 The application will be targeting people looking for package deals on hotel stays and admissions to various attractions. 
